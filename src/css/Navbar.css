@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+.Navbar{
+    position: static;
+    width: 100%;
+}
+.NavbarList{
+    display: flex;
+    gap: 2rem;
+}
+.NavbarList li a{
+    font-size: 20px;
+    color: black;
+    padding: 1.2rem;
+    font-weight: bold;
+    font-family: 'Bona Nova', serif;
+    transition: all 0.2s ease-in-out;
+}
+.NavbarList li a:hover{
+    transition: all 0.2s ease-in-out;
+    color: #3F48C9;
+}
