@@ -2,10 +2,11 @@
 .Navbar{
     position: static;
     width: 100%;
+    padding: 0;
 }
 .NavbarList{
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 .NavbarList li a{
     font-size: 20px;
@@ -14,6 +15,20 @@
     font-weight: bold;
     font-family: 'Bona Nova', serif;
     transition: all 0.2s ease-in-out;
+}
+.NavbarListMob{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+    padding: 0;
+}
+.NavbarListMob li{
+    border-bottom: 1px solid #dadada79;
+    width: 100%;
+}
+.NavbarListMob li a{
+    font-size: 1.5rem;
 }
 .NavbarList li a:hover{
     transition: all 0.2s ease-in-out;

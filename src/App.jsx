@@ -1,22 +1,24 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero'
-import Facts from './components/Facts';
-import Objectives from './components/Objectives';
-import Vision from './components/Vision';
-import Footer from './components/Footer';
+import Home from './views/Home';
+import Product from './views/Product';
+import Service from './views/Service';
+import Contact from './views/Contact';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from "react-router-dom";
 function App() {
   return (
-    <div className='Main'>
-      <div className="wrapper">
-        <Navbar/>
-        <Hero/>
-        <Facts/>
-        <Objectives/>
-        <Vision/>
-        <Footer/>
-      </div>
-    </div>
+    <Router>
+
+    <Routes>
+      <Route path='/' exact element={<Home />}/>
+      <Route path='/product' exact element={<Product />}/>
+      <Route path='/service' exact element={<Service />}/>
+      <Route path='/contact' exact element={<Contact />}/>
+    </Routes>
+    </Router>
   );
 }
 
